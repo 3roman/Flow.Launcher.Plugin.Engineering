@@ -16,7 +16,8 @@
 
 > Click the list item or press `Enter` to copy the current value
 
-![](https://raw.githubusercontent.com/lim42snec/Wox.Plugin.SteamTable/master/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.gif)
+
+![image](https://raw.githubusercontent.com/lim42snec/Wox.Plugin.SteamTable/master/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.gif)
 
 ## 引用列举
 
