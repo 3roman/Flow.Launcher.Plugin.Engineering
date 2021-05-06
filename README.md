@@ -23,6 +23,6 @@
 
 本项目至少引用了如下开源项目，在此感谢原作者的杰出工作：
 
--  [长沙优易水蒸气库](https://github.com/uesoft/UEWASPMobile)
+-  [长沙优易水蒸汽库](https://github.com/uesoft/UEWASPMobile)
 - [Costura打包工具](https://github.com/Fody/Costura)
 
