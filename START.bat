@@ -1,0 +1,1 @@
+C:\Users\CrazyDog\AppData\Local\Wox\Wox.exe

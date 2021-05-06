@@ -1,0 +1,12 @@
+{
+  "ID": "57C3BC17AE0D405288E8B541C0947BD6",
+  "ActionKeyword": "st",
+  "Name": "SteamTable",
+  "Description": "Query steam properties with IAPWS-IF97 formula",
+  "Author": "lim42snec",
+  "Version": "1.0.1",
+  "Language": "csharp",
+  "Website": "https://github.com/lim42snec/Wox.Plugin.SteamTable",
+  "IcoPath": "Images\\app.png",
+  "ExecuteFileName": "Wox.Plugin.SteamTable.dll"
+}
