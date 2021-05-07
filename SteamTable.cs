@@ -4,9 +4,29 @@ using System;
 
 namespace Wox.Plugin.SteamTable
 {
-    public class SteamTable : IPlugin
+    public class SteamTable : IPlugin, IPluginI18n
     {
-        public void Init(PluginInitContext context) { }
+        private PluginInitContext _context;
+
+        public string GetLanguagesFolder()
+        {
+            return null;
+        }
+
+        public string GetTranslatedPluginTitle()
+        {
+            return _context.API.GetTranslation("wox_plugin_title");
+        }
+
+        public string GetTranslatedPluginDescription()
+        {
+            return _context.API.GetTranslation("wox_plugin_description");
+        }
+
+        public void Init(PluginInitContext context) 
+        {
+            _context = context;
+        }
 
         public List<Result> Query(Query query)
         {
@@ -37,14 +57,13 @@ namespace Wox.Plugin.SteamTable
             {
                 MessageBox.Show(e.Message);
             }
-            //MessageBox.Show(r+string.Empty);
 
             return new List<Result>
             {
                 new Result
                 {
                     Title = h + string.Empty,
-                    SubTitle = "Enthalpy[kJ/kg]",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_enthalpy"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {
@@ -55,7 +74,7 @@ namespace Wox.Plugin.SteamTable
                 new Result
                 {
                     Title = s + string.Empty,
-                    SubTitle = "Entropy[kJ/kg.℃]",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_entropy"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {
@@ -66,7 +85,7 @@ namespace Wox.Plugin.SteamTable
                 new Result
                 {
                     Title = v + string.Empty,
-                    SubTitle = "SpecificVolume[m³/kg]",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_specific_volume"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {
@@ -77,7 +96,7 @@ namespace Wox.Plugin.SteamTable
                 new Result
                 {
                     Title = (1/v) + string.Empty,
-                    SubTitle = "Density[kg/m³]",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_density"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {
@@ -88,7 +107,7 @@ namespace Wox.Plugin.SteamTable
                 new Result
                 {
                     Title = k + string.Empty,
-                    SubTitle = "IsentropicIndex",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_isentropic_index"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {
@@ -99,7 +118,7 @@ namespace Wox.Plugin.SteamTable
                 new Result
                 {
                     Title = eta*1000 + string.Empty,
-                    SubTitle = "DynamicViscosity[mPa.s]",
+                    SubTitle = _context?.API.GetTranslation("wox_plugin_result_dynamic_viscosity"),
                     IcoPath = "Images\\item.png",
                     Action = _ =>
                     {

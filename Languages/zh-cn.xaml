@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="wox_plugin_title">SteamTable</system:String>
+    <system:String x:Key="wox_plugin_description">使用IAPWS-IF97公式查询水蒸汽性质</system:String>
+    <system:String x:Key="wox_plugin_result_enthalpy">比焓[kJ/kg]</system:String>
+    <system:String x:Key="wox_plugin_result_entropy">比熵[kJ/kg.℃]</system:String>
+    <system:String x:Key="wox_plugin_result_specific_volume">比体积[m³/kg]</system:String>
+    <system:String x:Key="wox_plugin_result_density">密度[kg/m³]</system:String>
+    <system:String x:Key="wox_plugin_result_isentropic_index">等熵指数</system:String>
+    <system:String x:Key="wox_plugin_result_dynamic_viscosity">动力粘度[mPa.s]</system:String>
+</ResourceDictionary>

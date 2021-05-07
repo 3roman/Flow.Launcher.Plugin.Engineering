@@ -2,9 +2,11 @@
 
 ## 项目简介
 
-本项目为[Wox](https://github.com/Wox-launcher/Wox)插件开发，其功能是提供一种查询水蒸汽性质的便捷手段，水蒸汽计算方法为IAPWS-IF97公式。
+本项目为[Wox](https://github.com/Wox-launcher/Wox)插件开发，其功能是提供一种查询水蒸汽性质的便捷手段，水蒸汽计算方法为IAPWS-IF97公式。仅支持64位操作系统。
 
-> Wox Plugin:Query steam properties with IAPWS-IF97 formulas
+> Wox plugin for querying steam properties with IAPWS-IF97 formulas
+>
+> 64-bit OS only
 
 ## 使用方法
 
@@ -17,7 +19,7 @@
 > Click the list item or press `Enter` to copy the current value
 
 
-![image](https://raw.githubusercontent.com/lim42snec/Wox.Plugin.SteamTable/master/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.gif)
+<img src="https://raw.githubusercontent.com/lim42snec/Wox.Plugin.SteamTable/master/%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.gif" alt="image" style="zoom: 50%;" />
 
 ## 引用列举
 
@@ -29,6 +31,7 @@
 ## 待完功能
 
 - [x] 根据压力、温度查询蒸汽性质
+- [x] 多国语言支持
 - [ ] 根据饱和压力查询饱和汽、饱和水性质
 - [ ] 根据饱和温度查询饱和汽、饱和水性质
 - [ ] 根据压力、比熵查询蒸汽性质
