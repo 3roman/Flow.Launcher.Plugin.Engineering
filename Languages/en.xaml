@@ -3,10 +3,27 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="wox_plugin_title">SteamTable</system:String>
     <system:String x:Key="wox_plugin_description">Query steam properties with IAPWS-IF97 formulas</system:String>
-    <system:String x:Key="wox_plugin_result_enthalpy">Enthalpy[kJ/kg]</system:String>
-    <system:String x:Key="wox_plugin_result_entropy">Entropy[kJ/kg.℃]</system:String>
-    <system:String x:Key="wox_plugin_result_specific_volume">SpecificVolume[m³/kg]</system:String>
-    <system:String x:Key="wox_plugin_result_density">Density[kg/m³]</system:String>
-    <system:String x:Key="wox_plugin_result_isentropic_index">IsentropicIndex</system:String>
-    <system:String x:Key="wox_plugin_result_dynamic_viscosity">DynamicViscosity[mPa.s]</system:String>
+    
+    <system:String x:Key="wox_plugin_results_enthalpy">Enthalpy[kJ/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_entropy">Entropy[kJ/kg.℃]</system:String>
+    <system:String x:Key="wox_plugin_results_specific_volume">SpecificVolume[m³/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_density">Density[kg/m³]</system:String>
+    <system:String x:Key="wox_plugin_results_isentropic_index">IsentropicIndex</system:String>
+    <system:String x:Key="wox_plugin_results_dynamic_viscosity">DynamicViscosity[cp]</system:String>
+    
+    <system:String x:Key="wox_plugin_results_saturated_temperature">SaturatedTemperature[℃]</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_enthalpy">VaporEnthalpy[kJ/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_entropy">VaporEntropy[kJ/kg.℃]</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_specific_volume">VaporSpecificVolume[m³/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_density">VaporDensity[kg/m³]</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_isentropic_index">VaporIsentropicIndex</system:String>
+    <system:String x:Key="wox_plugin_results_vapor_dynamic_viscosity">VaporDynamicViscosity[cp]</system:String>
+    <system:String x:Key="wox_plugin_results_water_enthalpy">WaterEnthalpy[kJ/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_water_entropy">WaterEntropy[kJ/kg.℃]</system:String>
+    <system:String x:Key="wox_plugin_results_water_specific_volume">WaterSpecificVolume[m³/kg]</system:String>
+    <system:String x:Key="wox_plugin_results_water_density">WaterDensity[kg/m³]</system:String>
+    <system:String x:Key="wox_plugin_results_water_isentropic_index">WaterIsentropicIndex</system:String>
+    <system:String x:Key="wox_plugin_results_water_dynamic_viscosity">WaterDynamicViscosity[cp]</system:String>
+
+
 </ResourceDictionary>

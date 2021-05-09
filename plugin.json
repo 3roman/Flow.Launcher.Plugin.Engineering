@@ -1,8 +1,8 @@
 {
   "ID": "57C3BC17AE0D405288E8B541C0947BD6",
-  "ActionKeyword": "ss",
+  "ActionKeyword": "*",
   "Name": "SteamTable",
-  "Description": "Query steam properties with IAPWS-IF97 formulas",
+  "Description": "Query steam property with IAPWS-IF97 formulations",
   "Author": "lim42snec",
   "Version": "1.0.1",
   "Language": "csharp",
