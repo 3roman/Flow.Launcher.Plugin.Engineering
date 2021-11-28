@@ -1,0 +1,13 @@
+{
+  "ID": "F032F44561B24097B53EB672A05FA2F0",
+  "ActionKeyword": "gt",
+  "Name": "GoogleTranslate",
+  "Description": "Translate between chinese and english with GT",
+  "Author": "guga hanks",
+  "Version": "0.0.1",
+  "Language": "csharp",
+  "Website": "https://github.com/3roman/Wox.Plugin",
+  "IcoPath": "Images\\app.png",
+  "ExecuteFileName": "Wox.Plugin.GoogleTranslate.dll",
+  "Disabled": false
+}

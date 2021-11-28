@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Weavers>
-	<Costura >
-		<Unmanaged64Assemblies>
-			UEwasp64
-		</Unmanaged64Assemblies>
-	</Costura>
-</Weavers>
