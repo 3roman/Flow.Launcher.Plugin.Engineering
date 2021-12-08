@@ -1,164 +1,116 @@
 ﻿using System.Collections.Generic;
-using System;
-using System.Text.RegularExpressions;
+using System.Windows;
 using Wox.Plugin.SteamTable.IFC97;
 
 
 namespace Wox.Plugin.SteamTable
 {
-    public class Main : IPlugin, IPluginI18n
+    public class SteamTable : IPlugin
     {
-        private PluginInitContext _context;
-
         public void Init(PluginInitContext context)
         {
-            _context = context;
         }
 
         public List<Result> Query(Query query)
         {
-            //if (query.ActionKeyword == "st")
-            //{
-            //    var search = query.Search.Trim().ToLower();
-            //    return DisPatcher(search);
-            //}
+            var raw = query.Search.Trim().ToLower();
+            var results = new List<Result>();
+            if (raw.StartsWith(@"pt") &&
+                !string.IsNullOrWhiteSpace(raw.Replace(@"pt", string.Empty)))
+            {
+                var param = raw.Replace(@"pt", string.Empty).Trim().Split(' ');
+                if (2 == param.Length)
+                {
+                    double.TryParse(param[0], out double press);
+                    double.TryParse(param[1], out double temp);
+                    return MakeResult(new SuperheatedSteam(press, temp));
+                }
+            }
+            else if (raw.StartsWith(@"pl") &&
+                !string.IsNullOrWhiteSpace(raw.Replace(@"pl", string.Empty)))
+            {
+                var param = raw.Replace(@"pl", string.Empty).Trim();
+                double.TryParse(param, out double press);
+                return MakeResult(new SaturatedWater(press));
+            }
+            else if (raw.StartsWith(@"pg") &&
+               !string.IsNullOrWhiteSpace(raw.Replace(@"pg", string.Empty)))
+            {
+                var param = raw.Replace(@"pg", string.Empty).Trim();
+                double.TryParse(param, out double press);
+                return MakeResult(new SaturatedSteam(press));
+            }
 
-            return null;
+            return results;
         }
 
-        public static H2O DisPatcher(string search)
+        public List<Result> MakeResult(H2O h2o)
         {
-            // 模式匹配
-            const string PT_PATTERN = @"([0-9\.]+)\s+([0-9\.]+)";
-            const string P_L_PATTERN = @"^pl([0-9\.]+)";
-            const string P_V_PATTERN = @"^pv([0-9.]+)";
-
-            // 分组结果的排头元素是原始字符串
-            if (3 == Regex.Matches(search, PT_PATTERN).Count)
+            var results = new List<Result>
             {
-                double.TryParse(Regex.Match(search, PT_PATTERN).Groups[1].Value, out double press);
-                double.TryParse(Regex.Match(search, PT_PATTERN).Groups[2].Value, out double temp);
+                new Result
+                {
+                    Title = h2o.Pressure + string.Empty,
+                    SubTitle = "压力[MPaA]",
+                },
+                new Result
+                {
+                    Title = h2o.Temperature + string.Empty,
+                    SubTitle = "温度[℃]",
+                },
+                new Result
+                {
+                    Title = h2o.Enthalpy + string.Empty,
+                    SubTitle = "比焓[kJ/kg]",
+                },
+                new Result
+                {
+                    Title = h2o.Entropy + string.Empty,
+                    SubTitle = "比熵[kJ/kg.℃]",
+                },
+                new Result
+                {
+                    Title = h2o.SpecificVolume + string.Empty,
+                    SubTitle = "比体积[m³/kg]",
+                },
+                new Result
+                {
+                    Title = h2o.DynamiViscosity + string.Empty,
+                    SubTitle = "动力粘度[cp]",
+                },
+                new Result
+                {
+                    Title = h2o.IsentropicIndex + string.Empty,
+                    SubTitle = "等熵指数",
+                }
+            };
 
-                return new SuperheatedSteam(press, temp);
-            }
-            else if (2 == Regex.Matches(search, P_L_PATTERN).Count)
-            {
-                double.TryParse(Regex.Match(search, P_L_PATTERN).Groups[1].Value, out double press);
+            results.ForEach(x => x.Action =
+                _ =>
+                {
+                    Clipboard.SetDataObject(x.Title);
+                    return true;
+                }
+            );
 
-                return new SaturatedWater(press);
-            }
-            else if (2 == Regex.Matches(search, P_V_PATTERN).Count)
-            {
-                double.TryParse(Regex.Match(search, P_V_PATTERN).Groups[1].Value, out double press);
-
-                return new SaturatedSteam(press);
-            }
-
-            return null;
+            return results;
         }
 
         #region 国际化
-        public string GetLanguagesFolder()
-        {
-            return null;
-        }
+        //public string GetLanguagesFolder()
+        //{
+        //    return null;
+        //}
 
-        public string GetTranslatedPluginTitle()
-        {
-            return _context.API.GetTranslation("wox_plugin_title");
-        }
+        //public string GetTranslatedPluginTitle()
+        //{
+        //    return _context.API.GetTranslation("wox_plugin_title");
+        //}
 
-        public string GetTranslatedPluginDescription()
-        {
-            return _context.API.GetTranslation("wox_plugin_description");
-        }
+        //public string GetTranslatedPluginDescription()
+        //{
+        //    return _context.API.GetTranslation("wox_plugin_description");
+        //}
         #endregion
     }
 }
-
-
-/*
-
-  return new List<Result>
-            {
-                new Result
-                {
-                    Title = t + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_saturated_temperature"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(t + string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = hG + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_enthalpy"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(hG + string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = sG + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_entropy"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(sG+ string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = vG + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_specific_volume"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(vG+ string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = (1/vG) + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_density"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject((1/vG) + string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = kG + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_isentropic_index"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(kG + string.Empty);
-                        return true;
-                    }
-                },
-                new Result
-                {
-                    Title = etaG*1000 + string.Empty,
-                    SubTitle = _context?.API.GetTranslation("wox_plugin_results_vapor_dynamic_viscosity"),
-                    IcoPath = "Images\\item.png",
-                    Action = _ =>
-                    {
-                        Clipboard.SetDataObject(etaG*1000 + string.Empty);
-                        return true;
-                    }
-                },
-            };
- * 
- * 
- */

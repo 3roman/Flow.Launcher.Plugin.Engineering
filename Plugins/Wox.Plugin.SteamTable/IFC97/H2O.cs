@@ -8,7 +8,7 @@
         public double Pressure
         {
             get { return _pressure; }
-            set { _pressure = value; }
+            protected set { _pressure = value; }
         }
 
         // ℃
@@ -17,7 +17,7 @@
         public double Temperature
         {
             get { return _temperature; }
-            set { _temperature = value; }
+            protected set { _temperature = value; }
         }
 
         // kJ/kg
@@ -26,7 +26,6 @@
         public double Enthalpy
         {
             get { return _enthalpy; }
-            set { _enthalpy = value; }
         }
 
         // kJ/(kg.℃)
@@ -35,7 +34,6 @@
         public double Entropy
         {
             get { return _entropy; }
-            set { _entropy = value; }
         }
 
         // m³/kg
@@ -44,7 +42,6 @@
         public double SpecificVolume
         {
             get { return _specificVolume; }
-            set { _specificVolume = value; }
         }
 
         protected double _isentropicIndex;
@@ -52,7 +49,6 @@
         public double IsentropicIndex
         {
             get { return _isentropicIndex; }
-            set { _isentropicIndex = value; }
         }
 
         // cp
@@ -60,8 +56,7 @@
 
         public double DynamiViscosity
         {
-            get { return _dynamiViscosity; }
-            set { _dynamiViscosity = value; }
+            get { return _dynamiViscosity * 1e3; }
         }
 
         protected int _region;
@@ -69,7 +64,6 @@
         public int Region
         {
             get { return _region; }
-            set { _region = value; }
         }
     }
 }

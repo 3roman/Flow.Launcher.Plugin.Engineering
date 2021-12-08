@@ -1,29 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
-
+    
     <system:String x:Key="wox_plugin_title">SteamTable</system:String>
     <system:String x:Key="wox_plugin_description">使用IAPWS-IF97公式查询水蒸汽性质</system:String>
     
-    <system:String x:Key="wox_plugin_results_enthalpy">比焓[kJ/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_entropy">比熵[kJ/kg.℃]</system:String>
-    <system:String x:Key="wox_plugin_results_specific_volume">比体积[m³/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_density">密度[kg/m³]</system:String>
-    <system:String x:Key="wox_plugin_results_isentropic_index">等熵指数</system:String>
-    <system:String x:Key="wox_plugin_results_dynamic_viscosity">动力粘度[cp]</system:String>
-
-    <system:String x:Key="wox_plugin_results_saturated_temperature">饱和温度[℃]</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_enthalpy">饱和汽比焓[kJ/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_entropy">饱和汽比熵[kJ/kg.℃]</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_specific_volume">饱和汽比体积[m³/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_density">饱和汽密度[kg/m³]</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_isentropic_index">饱和汽等熵指数</system:String>
-    <system:String x:Key="wox_plugin_results_vapor_dynamic_viscosity">饱和汽动力粘度[cp]</system:String>
-    <system:String x:Key="wox_plugin_results_water_enthalpy">饱和水比焓[kJ/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_water_entropy">饱和水比熵[kJ/kg.℃]</system:String>
-    <system:String x:Key="wox_plugin_results_water_specific_volume">饱和水比体积[m³/kg]</system:String>
-    <system:String x:Key="wox_plugin_results_water_density">饱和水密度[kg/m³]</system:String>
-    <system:String x:Key="wox_plugin_results_water_isentropic_index">饱和水等熵指数</system:String>
-    <system:String x:Key="wox_plugin_results_water_dynamic_viscosity">饱和水动力粘度[cp]</system:String>
-
 </ResourceDictionary>
