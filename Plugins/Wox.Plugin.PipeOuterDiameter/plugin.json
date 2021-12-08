@@ -1,0 +1,13 @@
+{
+  "ID": "C1AEA925C26F4F1C8B92560C99AFC589",
+  "ActionKeyword": "dn",
+  "Name": "查询管道外径",
+  "Description": "由管道公称直径查询公英制外径",
+  "Author": "guga hanks",
+  "Version": "0.0.1",
+  "Language": "csharp",
+  "Website": "https://github.com/3roman/Wox.Plugin",
+  "ExecuteFileName": "Wox.Plugin.PipeOutsideDiameter.dll",
+  "IcoPath": "Images\\app.png",
+  "Disabled": false
+}

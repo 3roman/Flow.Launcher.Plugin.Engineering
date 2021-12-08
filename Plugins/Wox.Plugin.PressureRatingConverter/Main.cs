@@ -10,8 +10,8 @@ namespace Wox.Plugin.PressureRatingConverter
     public class PressureRatingConverter : IPlugin
     {
         private string _jsonFile;
-        private const string CLASS_PATTERN = @"cl\s*([0-9]+)";
-        private const string PN_PATTERN = @"pn\s*([0-9.]+)";
+        private const string CLASS_PATTERN = @"cl\s+([0-9]+)";
+        private const string PN_PATTERN = @"pn\s+([0-9.]+)";
 
         public void Init(PluginInitContext context)
         {
@@ -22,7 +22,8 @@ namespace Wox.Plugin.PressureRatingConverter
         {
             var raw = query.Search.Trim().ToLower();
             var results = new List<Result>();
-            if ("class" == raw)
+            if (raw.StartsWith(@"cl") &&
+                string.IsNullOrWhiteSpace(raw.Replace(@"cl",string.Empty)))
             {
                 foreach (var item in ReadJsonFile(_jsonFile))
                 {
@@ -31,7 +32,8 @@ namespace Wox.Plugin.PressureRatingConverter
 
                 return results;
             }
-            else if ("pn" == raw)
+            if (raw.StartsWith(@"pn") &&
+                string.IsNullOrWhiteSpace(raw.Replace(@"pn", string.Empty)))
             {
                 foreach (var item in ReadJsonFile(_jsonFile))
                 {
