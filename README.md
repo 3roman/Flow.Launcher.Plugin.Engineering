@@ -15,3 +15,7 @@
 - Wox.Plugin.PipeOutsideDiameter
 
   由管道公称直径查询公英制外径
+  
+  - Wox.Plugin.Pipe
+
+  由管道公称直径和管表号查询外径x壁厚

@@ -25,7 +25,7 @@ namespace Wox.Plugin.PressureRatingConverter
             if (raw.StartsWith(@"cl") &&
                 string.IsNullOrWhiteSpace(raw.Replace(@"cl",string.Empty)))
             {
-                foreach (var item in ReadJsonFile(_jsonFile))
+                foreach (var item in ReadJsonFile<Dictionary<string, string>>(_jsonFile))
                 {
                     results.Add(new Result() { Title = item.Value });
                 }
@@ -35,7 +35,7 @@ namespace Wox.Plugin.PressureRatingConverter
             if (raw.StartsWith(@"pn") &&
                 string.IsNullOrWhiteSpace(raw.Replace(@"pn", string.Empty)))
             {
-                foreach (var item in ReadJsonFile(_jsonFile))
+                foreach (var item in ReadJsonFile<Dictionary<string, string>>(_jsonFile))
                 {
                     results.Add(new Result() { Title = item.Key });
                 }
@@ -64,7 +64,7 @@ namespace Wox.Plugin.PressureRatingConverter
 
         public string ConvertPressureRating(string pressureRating, bool isClass2PN = true)
         {
-            var data = ReadJsonFile(_jsonFile);
+            var data = ReadJsonFile<Dictionary<string, string>>(_jsonFile);
             if (isClass2PN)
             {
                 var key = data.Where(x => x.Value == pressureRating).FirstOrDefault().Key;
@@ -77,10 +77,10 @@ namespace Wox.Plugin.PressureRatingConverter
             }
         }
 
-        private Dictionary<string, string> ReadJsonFile(string fileName)
+        private T ReadJsonFile<T>(string fileName)
         {
             var content = File.ReadAllText(fileName);
-            return JsonConvert.DeserializeObject<Dictionary<string, string>>(content);
+            return JsonConvert.DeserializeObject<T>(content);
         }
     }
 }

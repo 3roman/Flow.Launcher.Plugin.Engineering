@@ -20,7 +20,7 @@ namespace Wox.Plugin.PipeOutsideDiameter
             var search = query.Search.Trim().ToLower();
             var results = new List<Result>();
             //search = "50";
-            var data = ReadJsonFile(_jsonFile);
+            var data = ReadJsonFile<Dictionary<string, string[]>>(_jsonFile);
             if (data != null && data.ContainsKey(search))
             {
                 results.Add(new Result() { Title = $"{data[search].GetValue(0)}", SubTitle = "I系列（英制）" });
@@ -30,10 +30,10 @@ namespace Wox.Plugin.PipeOutsideDiameter
             return results;
         }
 
-        private Dictionary<string, string[]> ReadJsonFile(string fileName)
+        private T ReadJsonFile<T>(string fileName)
         {
             var content = File.ReadAllText(fileName);
-            return JsonConvert.DeserializeObject<Dictionary<string, string[]>>(content);
+            return JsonConvert.DeserializeObject<T>(content);
         }
     }
 }
