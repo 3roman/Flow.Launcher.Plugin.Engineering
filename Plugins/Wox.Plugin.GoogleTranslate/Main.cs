@@ -6,15 +6,13 @@ using System.Text.RegularExpressions;
 
 namespace Wox.Plugin.GoogleTranslate
 {
-    public class Main : IPlugin
+    public class GoogleTranslate : IPlugin
     {
         public List<Result> Query(Query query)
         {
             var result = new Result
             {
-                Title = "Hello World from CSharp",
-                SubTitle = $"Query: {query.Search}",
-                IcoPath = Path.Combine("Images", "app.png")
+                Title = "123"
             };
 
             return new List<Result> { result };

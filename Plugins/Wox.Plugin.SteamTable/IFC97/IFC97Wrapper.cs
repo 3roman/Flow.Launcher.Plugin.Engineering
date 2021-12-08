@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Wox.Plugin.SteamTable
+namespace Wox.Plugin.SteamTable.IFC97
 {
     public static class IFC97Wrapper
     {

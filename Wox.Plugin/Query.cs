@@ -6,7 +6,7 @@ namespace Wox.Plugin
 {
     public class Query
     {
-        internal Query() { }
+        public Query() { }
 
         /// <summary>
         /// to allow unit tests for plug ins
@@ -31,7 +31,7 @@ namespace Wox.Plugin
         /// Since we allow user to switch a exclusive plugin to generic plugin, 
         /// so this property will always give you the "real" query part of the query
         /// </summary>
-        public string Search { get; internal set; }
+        public string Search { get;  set; }
 
         /// <summary>
         /// The raw query splited into a string array.

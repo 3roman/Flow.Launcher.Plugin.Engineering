@@ -1,0 +1,13 @@
+{
+  "ID": "F16489A8D7BF44488C05F0ABE2A98B75",
+  "ActionKeyword": "*",
+  "Name": "压力等级转换",
+  "Description": "Class与PN相互转换",
+  "Author": "guga hanks",
+  "Version": "0.0.1",
+  "Language": "csharp",
+  "Website": "https://github.com/3roman/Wox.Plugin",
+  "ExecuteFileName": "Wox.Plugin.PressureRatingConverter.dll",
+  "IcoPath": "Images\\app.png",
+  "Disabled": false
+}
