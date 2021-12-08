@@ -1,4 +1,4 @@
-这是一个[Wox](https://github.com/Wox-launcher/Wox)插件项目，使用纯 C#开发，目前完成了以下插件：
+这是一个[Wox](https://github.com/Wox-launcher/Wox)插件项目，使用 C# 开发，目前完成了以下插件：
 
 - Wox.Plugin.SteamTable
 
@@ -10,12 +10,12 @@
 
 - Wox.Plugin.PressureRatingConverter
 
-  Class 与 PN 压力等级相互转换
+  互转 Class 与 PN 压力等级
 
 - Wox.Plugin.PipeOutsideDiameter
 
-  由管道公称直径查询公英制外径
-  
-  - Wox.Plugin.Pipe
+  根据管道公称直径查询公英制外径
 
-  由管道公称直径和管表号查询外径x壁厚
+- Wox.Plugin.Pipe
+
+  根据管道公称直径和管表号查询外径和壁厚
