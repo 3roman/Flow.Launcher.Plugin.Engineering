@@ -33,10 +33,10 @@ namespace Wox.Plugin.SteamTable
                 double.TryParse(param, out double press);
                 return MakeResult(new SaturatedWater(press));
             }
-            else if (raw.StartsWith(@"pg") &&
-               !string.IsNullOrWhiteSpace(raw.Replace(@"pg", string.Empty)))
+            else if (raw.StartsWith(@"pv") &&
+               !string.IsNullOrWhiteSpace(raw.Replace(@"pv", string.Empty)))
             {
-                var param = raw.Replace(@"pg", string.Empty).Trim();
+                var param = raw.Replace(@"pv", string.Empty).Trim();
                 double.TryParse(param, out double press);
                 return MakeResult(new SaturatedSteam(press));
             }
