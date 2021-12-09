@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using NLog;
+using System;
 using System.Globalization;
 using System.IO;
-using Newtonsoft.Json;
-using NLog;
 using Wox.Infrastructure.Logger;
 
 namespace Wox.Infrastructure.Storage

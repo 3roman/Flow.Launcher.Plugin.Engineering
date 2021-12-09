@@ -1,8 +1,8 @@
-﻿using System;
+﻿using ICSharpCode.SharpZipLib.Zip;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Windows;
-using ICSharpCode.SharpZipLib.Zip;
-using Newtonsoft.Json;
 using Wox.Plugin;
 
 namespace Wox.Core.Plugin

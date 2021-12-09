@@ -1,9 +1,9 @@
-using System;
-using System.Collections.ObjectModel;
-using System.Drawing;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using NLog;
+using System;
+using System.Collections.ObjectModel;
+using System.Drawing;
 using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.Storage;
 using Wox.Plugin;

@@ -49,7 +49,7 @@ namespace Wox.Helper
             {
                 WindowInteropHelper helper = new WindowInteropHelper(window);
                 int val = 2;
-                int ret1 = DwmSetWindowAttribute(helper.Handle, 2, ref val, 4);  
+                int ret1 = DwmSetWindowAttribute(helper.Handle, 2, ref val, 4);
 
                 if (ret1 == 0)
                 {

@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Media;
-using Microsoft.Win32;
 
 namespace Wox.Helper
 {
@@ -35,7 +35,7 @@ namespace Wox.Helper
             {
                 try
                 {
-                    var parts = result.ToString().Trim().Split(new[] {' '}, 3).Select(byte.Parse).ToList();
+                    var parts = result.ToString().Trim().Split(new[] { ' ' }, 3).Select(byte.Parse).ToList();
                     return Color.FromRgb(parts[0], parts[1], parts[2]);
                 }
                 catch

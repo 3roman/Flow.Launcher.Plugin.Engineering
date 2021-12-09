@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
 
 
 namespace Wox.Plugin.PressureRatingConverter
@@ -23,7 +23,7 @@ namespace Wox.Plugin.PressureRatingConverter
             var raw = query.Search.Trim().ToLower();
             var results = new List<Result>();
             if (raw.StartsWith(@"cl") &&
-                string.IsNullOrWhiteSpace(raw.Replace(@"cl",string.Empty)))
+                string.IsNullOrWhiteSpace(raw.Replace(@"cl", string.Empty)))
             {
                 foreach (var item in ReadJsonFile<Dictionary<string, string>>(_jsonFile))
                 {

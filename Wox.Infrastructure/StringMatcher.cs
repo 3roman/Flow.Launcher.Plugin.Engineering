@@ -2,9 +2,7 @@ using NLog;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
 using System.Runtime.Caching;
-using Wox.Infrastructure.Logger;
 using static Wox.Infrastructure.StringMatcher;
 
 namespace Wox.Infrastructure
@@ -134,7 +132,8 @@ namespace Wox.Infrastructure
                         {
                             consecutiveMatch += 1;
                             outScore += 10 * consecutiveMatch;
-                        } else
+                        }
+                        else
                         {
                             consecutiveMatch = 0;
                         }

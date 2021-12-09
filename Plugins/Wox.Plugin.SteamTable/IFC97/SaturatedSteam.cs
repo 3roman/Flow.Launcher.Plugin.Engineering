@@ -14,7 +14,7 @@
                 IFC97Wrapper.P2KSG97(Pressure, ref _isentropicIndex, ref _region);
                 IFC97Wrapper.P2ETAG97(Pressure, ref _dynamiViscosity, ref _region);
             }
-            else 
+            else
             {
                 Temperature = param;
                 IFC97Wrapper.T2P97(Temperature, ref _pressure, ref _region);

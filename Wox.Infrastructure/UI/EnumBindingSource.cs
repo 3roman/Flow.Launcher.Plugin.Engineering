@@ -37,7 +37,7 @@ namespace Wox.Infrastructure.UI
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             if (_enumType == null)
-            { 
+            {
                 throw new InvalidOperationException("The EnumType must be specified.");
             }
 

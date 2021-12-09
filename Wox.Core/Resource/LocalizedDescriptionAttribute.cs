@@ -19,7 +19,7 @@ namespace Wox.Core
             get
             {
                 string description = _translator.GetTranslation(_resourceKey);
-                return string.IsNullOrWhiteSpace(description) ? 
+                return string.IsNullOrWhiteSpace(description) ?
                     string.Format("[[{0}]]", _resourceKey) : description;
             }
         }

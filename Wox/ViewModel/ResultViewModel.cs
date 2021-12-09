@@ -1,11 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using NLog;
+using System;
 using System.Windows.Media;
-using System.Windows.Threading;
-using NLog;
-
 using Wox.Image;
-using Wox.Infrastructure;
 using Wox.Infrastructure.Logger;
 using Wox.Plugin;
 

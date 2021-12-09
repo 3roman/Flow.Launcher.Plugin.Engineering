@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
-
+using System.Windows.Forms;
 
 namespace Wox.Plugin.PipeOutsideDiameter
 {
@@ -26,6 +25,14 @@ namespace Wox.Plugin.PipeOutsideDiameter
                 results.Add(new Result() { Title = $"{data[search].GetValue(0)}", SubTitle = "I系列（英制）" });
                 results.Add(new Result() { Title = $"{data[search].GetValue(1)}", SubTitle = "II系列（公制）" });
             }
+
+            results.ForEach(x => x.Action =
+                _ =>
+                {
+                    Clipboard.SetDataObject(x.Title);
+                    return true;
+                }
+            );
 
             return results;
         }

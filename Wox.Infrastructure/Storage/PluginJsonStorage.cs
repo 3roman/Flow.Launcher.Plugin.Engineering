@@ -3,7 +3,7 @@ using Wox.Infrastructure.UserSettings;
 
 namespace Wox.Infrastructure.Storage
 {
-    public class PluginJsonStorage<T> :JsonStrorage<T> where T : new()
+    public class PluginJsonStorage<T> : JsonStrorage<T> where T : new()
     {
         public PluginJsonStorage()
         {

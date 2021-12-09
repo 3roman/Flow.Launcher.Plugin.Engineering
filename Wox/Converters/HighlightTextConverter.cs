@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -29,8 +27,8 @@ namespace Wox.Converters
                 return new Run(text);
             }
 
-            HightLightStyle style = selected? Selected: Default;
-            
+            HightLightStyle style = selected ? Selected : Default;
+
             var textBlock = new Span();
             for (var i = 0; i < text.Length; i++)
             {

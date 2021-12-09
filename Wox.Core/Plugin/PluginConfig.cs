@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using NLog;
-using Wox.Infrastructure.Exception;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using Wox.Infrastructure.Logger;
 using Wox.Plugin;
 

@@ -4,9 +4,7 @@ using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
 using Wox.Helper;
-using Wox.Infrastructure;
 using Wox.Image;
 
 namespace Wox
@@ -68,7 +66,8 @@ namespace Wox
             {
                 imgIco.Source = ImageLoader.Load(Path.Combine(Infrastructure.Constant.ProgramDirectory, "Images\\app.png"));
             }
-            else {
+            else
+            {
                 imgIco.Source = ImageLoader.Load(iconPath);
             }
 

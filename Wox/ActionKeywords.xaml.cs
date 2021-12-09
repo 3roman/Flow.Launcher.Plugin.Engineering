@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using Wox.Core.Plugin;
 using Wox.Core.Resource;
-using Wox.Infrastructure.Exception;
 using Wox.Infrastructure.UserSettings;
 using Wox.Plugin;
 

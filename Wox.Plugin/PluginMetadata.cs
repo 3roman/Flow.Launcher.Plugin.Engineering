@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
 
 namespace Wox.Plugin
 {
@@ -17,7 +17,7 @@ namespace Wox.Plugin
         public string Description { get; set; }
         public string Website { get; set; }
         public bool Disabled { get; set; }
-        public string ExecuteFilePath { get; private set;}
+        public string ExecuteFilePath { get; private set; }
 
         public string ExecuteFileName { get; set; }
 
@@ -36,7 +36,7 @@ namespace Wox.Plugin
 
         public List<string> ActionKeywords { get; set; }
 
-        public string IcoPath { get; set;}
+        public string IcoPath { get; set; }
 
         // keep plugin raw score by not multiply selected counts
         public bool KeepResultRawScore { get; set; }

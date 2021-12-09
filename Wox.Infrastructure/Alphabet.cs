@@ -1,11 +1,8 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Specialized;
-using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Caching;
-using NLog;
 using ToolGood.Words;
-using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.UserSettings;
 
 namespace Wox.Infrastructure
@@ -14,7 +11,7 @@ namespace Wox.Infrastructure
     {
         private Settings _settings;
         private MemoryCache _cache;
-        
+
         private static readonly NLog.Logger Logger = LogManager.GetCurrentClassLogger();
 
         public void Initialize()

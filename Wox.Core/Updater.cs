@@ -1,21 +1,19 @@
+using JetBrains.Annotations;
+using Newtonsoft.Json;
+using NLog;
+using Squirrel;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using JetBrains.Annotations;
-using Squirrel;
-using Newtonsoft.Json;
 using Wox.Core.Resource;
 using Wox.Infrastructure;
 using Wox.Infrastructure.Http;
 using Wox.Infrastructure.Logger;
-using System.IO;
-using NLog;
-using Wox.Infrastructure.UserSettings;
 
 namespace Wox.Core
 {

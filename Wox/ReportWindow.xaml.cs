@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
-using System.Text;
 using System.Linq;
 using System.Windows;
 using System.Windows.Documents;
-using Wox.Helper;
 using Wox.Infrastructure;
-using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.Exception;
+using Wox.Infrastructure.Logger;
 
 namespace Wox
 {

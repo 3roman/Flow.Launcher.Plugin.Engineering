@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using Wox.Infrastructure;
 using Wox.Plugin;
@@ -50,8 +49,10 @@ namespace Wox.Core.Plugin
             return Execute(_startInfo);
         }
 
-        protected override string ExecuteContextMenu(Result selectedResult) {
-            JsonRPCServerRequestModel request = new JsonRPCServerRequestModel {
+        protected override string ExecuteContextMenu(Result selectedResult)
+        {
+            JsonRPCServerRequestModel request = new JsonRPCServerRequestModel
+            {
                 Method = "context_menu",
                 Parameters = new object[] { selectedResult.ContextData },
             };

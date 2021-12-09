@@ -1,12 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Windows;
-using System.Xml;
-using Microsoft.Win32;
 using Wox.Infrastructure.UserSettings;
 
 namespace Wox.Infrastructure.Exception
@@ -63,7 +60,7 @@ namespace Wox.Infrastructure.Exception
             sb.Append(Indent(indentLevel));
             sb.Append("HResult: ");
             sb.AppendLine(ex.HResult.ToString());
-            foreach(object key in ex.Data.Keys)
+            foreach (object key in ex.Data.Keys)
             {
                 object value = ex.Data[key];
                 sb.Append(Indent(indentLevel));

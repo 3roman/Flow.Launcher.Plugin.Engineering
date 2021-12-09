@@ -1,28 +1,21 @@
-using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Collections.Generic;
-using System.Threading;
-using System.Globalization;
-
 using CommandLine;
 using NLog;
-
-using Wox.Core;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Threading;
+using System.Windows;
 using Wox.Core.Configuration;
 using Wox.Core.Plugin;
 using Wox.Core.Resource;
 using Wox.Helper;
-using Wox.Infrastructure;
-using Wox.Infrastructure.Http;
 using Wox.Image;
+using Wox.Infrastructure;
+using Wox.Infrastructure.Exception;
+using Wox.Infrastructure.Http;
 using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.UserSettings;
 using Wox.ViewModel;
-using Stopwatch = Wox.Infrastructure.Stopwatch;
-using Wox.Infrastructure.Exception;
-using Sentry;
 
 namespace Wox
 {

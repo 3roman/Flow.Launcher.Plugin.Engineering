@@ -1,11 +1,10 @@
-using System;
-using System.Diagnostics;
-using System.IO;
-using System.Runtime.CompilerServices;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
 using Sentry;
+using System.Diagnostics;
+using System.IO;
+using System.Runtime.CompilerServices;
 using Wox.Infrastructure.Exception;
 using Wox.Infrastructure.UserSettings;
 

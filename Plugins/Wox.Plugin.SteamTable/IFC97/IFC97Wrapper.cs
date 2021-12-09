@@ -81,7 +81,7 @@ namespace Wox.Plugin.SteamTable.IFC97
 
         [DllImport("UEwasp64")]
         public static extern void PT2S97(double p, double t, ref double ks, ref int r);
-        
+
         [DllImport("UEwasp64")]
         public static extern void PT2V97(double p, double t, ref double v, ref int r);
 

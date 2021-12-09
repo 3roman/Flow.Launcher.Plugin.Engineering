@@ -35,7 +35,7 @@ namespace Wox
             var p = e.GetPosition((IInputElement)sender);
             if (_lastpos != p)
             {
-                ((ListBoxItem) sender).IsSelected = true;
+                ((ListBoxItem)sender).IsSelected = true;
             }
         }
 

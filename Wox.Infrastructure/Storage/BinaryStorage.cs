@@ -1,10 +1,10 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.IO;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters;
 using System.Runtime.Serialization.Formatters.Binary;
-using NLog;
 using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.UserSettings;
 

@@ -25,7 +25,7 @@ namespace Wox.Core
                     return (!String.IsNullOrEmpty(localizedDescription)) ? localizedDescription : value.ToString();
                 }
             }
-            
+
             return string.Empty;
         }
 

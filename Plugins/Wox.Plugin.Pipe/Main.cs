@@ -15,7 +15,7 @@ namespace Wox.Plugin.Pipe
         {
             _jsonFile = Path.Combine(context.CurrentPluginMetadata.PluginDirectory, "data.json");
         }
-        
+
         public List<Result> Query(Query query)
         {
             if (3 != query.Terms.Length)
@@ -30,15 +30,15 @@ namespace Wox.Plugin.Pipe
             {
                 try
                 {
-                    var od = data.Where(x => dn == x.DN && sch == x.SCH).FirstOrDefault().OD;
-                    var thk = data.Where(x => dn == x.DN && sch == x.SCH).FirstOrDefault().Thk;
+                    var pipe = data.Where(x => dn == x.DN).FirstOrDefault();
+                    var thk = pipe.SCHS.Where(x => x.SCH == sch).FirstOrDefault().Thk;
                     results.Add(
                         new Result
                         {
-                            Title = $"{od}x{thk}",
+                            Title = $"{pipe.OD}x{thk}",
                             Action = _ =>
                             {
-                                Clipboard.SetDataObject($"{od}x{thk}");
+                                Clipboard.SetDataObject($"{pipe.OD}x{thk}");
                                 return true;
                             }
                         });
@@ -55,6 +55,7 @@ namespace Wox.Plugin.Pipe
         private T ReadJsonFile<T>(string fileName)
         {
             var content = File.ReadAllText(fileName);
+
             return JsonConvert.DeserializeObject<T>(content);
         }
     }

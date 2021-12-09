@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
-using Wox.Infrastructure.Storage;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using Wox.Plugin;
 
 namespace Wox.Storage

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using NLog;
 using Wox.Infrastructure.Logger;
 
 namespace Wox.Infrastructure

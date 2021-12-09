@@ -1,10 +1,10 @@
-﻿using System;
+﻿using NHotkey.Wpf;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using NHotkey.Wpf;
 using Wox.Core.Resource;
 using Wox.Infrastructure.Hotkey;
 using Wox.Plugin;

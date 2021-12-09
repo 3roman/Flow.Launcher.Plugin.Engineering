@@ -19,7 +19,7 @@
 
         public static bool IsAllowed(string language)
         {
-            return language.ToUpper() == Python.ToUpper() 
+            return language.ToUpper() == Python.ToUpper()
                 || language.ToUpper() == CSharp.ToUpper()
                 || language.ToUpper() == Executable.ToUpper();
         }

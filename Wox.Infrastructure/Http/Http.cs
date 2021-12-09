@@ -1,10 +1,10 @@
-﻿using System.IO;
+﻿using JetBrains.Annotations;
+using NLog;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using JetBrains.Annotations;
-using NLog;
 using Wox.Infrastructure.Logger;
 using Wox.Infrastructure.UserSettings;
 

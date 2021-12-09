@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Navigation;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using NHotkey;
 using NHotkey.Wpf;
 using Ookii.Dialogs.Wpf; // may be removed later https://github.com/dotnet/wpf/issues/438
-
-using Wox.Core;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Input;
+using System.Windows.Navigation;
 using Wox.Core.Plugin;
 using Wox.Core.Resource;
 using Wox.Infrastructure.Hotkey;
@@ -212,7 +206,7 @@ namespace Wox
         {
             var id = _viewModel.SelectedPlugin.PluginPair.Metadata.ID;
             // used to sync the current status from the plugin manager into the setting to keep consistency after save
-            _settings.PluginSettings.Plugins[id].Disabled = _viewModel.SelectedPlugin.PluginPair.Metadata.Disabled; 
+            _settings.PluginSettings.Plugins[id].Disabled = _viewModel.SelectedPlugin.PluginPair.Metadata.Disabled;
         }
 
         private void OnPluginActionKeywordsClick(object sender, MouseButtonEventArgs e)

@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Globalization;
 using System.Windows.Data;
-using NLog;
 using Wox.Infrastructure.Logger;
 using Wox.ViewModel;
 

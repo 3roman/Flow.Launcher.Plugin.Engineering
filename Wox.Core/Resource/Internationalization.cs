@@ -1,10 +1,10 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows;
-using NLog;
 using Wox.Core.Plugin;
 using Wox.Infrastructure;
 using Wox.Infrastructure.Logger;
