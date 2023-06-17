@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "uG6HQ+0dFb4yFtte8UkWepK9+6RIXFpX4mHgSyjtSQ3dbdLulcIvjothgYmuiU2b0j6cx3O2c7q6+8NIdzg8nA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\crazydog\\Documents\\GitHub\\Flow.Launcher.Plugin.Engineering\\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crazydog\\.nuget\\packages\\flow.launcher.plugin\\4.0.1\\flow.launcher.plugin.4.0.1.nupkg.sha512",
+    "C:\\Users\\crazydog\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
+    "C:\\Users\\crazydog\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
+    "C:\\Users\\crazydog\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

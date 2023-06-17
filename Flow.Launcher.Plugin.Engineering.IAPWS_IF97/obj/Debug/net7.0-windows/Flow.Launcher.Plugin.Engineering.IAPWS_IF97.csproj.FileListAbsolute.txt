@@ -1,0 +1,15 @@
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\app.png
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\libseuif97.dll
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\plugin.json
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.deps.json
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.dll
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\bin\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.pdb
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.csproj.AssemblyReference.cache
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.AssemblyInfoInputs.cache
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.AssemblyInfo.cs
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.csproj.CoreCompileInputs.cache
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.dll
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\refint\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.dll
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.pdb
+C:\Users\crazydog\Documents\GitHub\Flow.Launcher.Plugin.Engineering\Flow.Launcher.Plugin.Engineering.IAPWS_IF97\obj\Debug\net7.0-windows\ref\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.dll
