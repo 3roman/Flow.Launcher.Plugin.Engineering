@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flow.Launcher.Plugin.Engineering.IAPWS_IF97", "Flow.Launcher.Plugin.Engineering.IAPWS_IF97\Flow.Launcher.Plugin.Engineering.IAPWS_IF97.csproj", "{00FF76CE-2848-495B-B7A4-C038BED0AD2A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flow.Launcher.Plugin.Engineering.XNoteFinder", "Flow.Launcher.Plugin.Engineering.XNoteFinder\Flow.Launcher.Plugin.Engineering.XNoteFinder.csproj", "{482EDCCF-01F8-434E-B219-7BF9429FE466}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{00FF76CE-2848-495B-B7A4-C038BED0AD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FF76CE-2848-495B-B7A4-C038BED0AD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FF76CE-2848-495B-B7A4-C038BED0AD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482EDCCF-01F8-434E-B219-7BF9429FE466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482EDCCF-01F8-434E-B219-7BF9429FE466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482EDCCF-01F8-434E-B219-7BF9429FE466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482EDCCF-01F8-434E-B219-7BF9429FE466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

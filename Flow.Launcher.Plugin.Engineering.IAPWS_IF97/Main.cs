@@ -13,32 +13,6 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
         {
             List<Result> results = new List<Result>();
 
-            if (query.ActionKeyword != "pt97")
-            {
-                return new List<Result>
-                {
-                    new Result
-                    {
-                        Title = "IF97",
-                        SubTitle = "Specific Volume (v)   [m³/kg]",
-                    },
-                };
-            }
-
-            if (query.ActionKeyword != "ps97")
-            {
-                return new List<Result>
-                {
-                    new Result
-                    {
-                        Title = "IF97",
-                        SubTitle = "Specific Volume (v)   [m³/kg]",
-                    },
-                };
-            }
-
-
-
             if (0 == string.Compare("pt", query.FirstSearch) && 3 == query.SearchTerms.Length)
             {
                 _ = double.TryParse(query.SecondSearch, out double p);
@@ -426,7 +400,7 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                         Title = IF97.HS2T(h, s) + string.Empty,
                         SubTitle = "Temperature (t)    [℃]",
                     },
-                    
+
                     new Result
                     {
                         Title = IF97.HS2V(h, s) + string.Empty,
@@ -485,13 +459,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                 };
             }
 
-            results.ForEach(item => item.Action =
-                    _ =>
-                    {
-                        System.Windows.Clipboard.SetDataObject(item.Title);
-                        return false;
-                    }
-                 );
+            results.ForEach(item =>
+            {
+                item.CopyText = item.Title;
+            });
 
             return results;
         }

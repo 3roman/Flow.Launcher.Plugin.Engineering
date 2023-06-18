@@ -1,0 +1,12 @@
+{
+  "ID": "EAD5EBC2C1A3571B97ECF66120D8C89C",
+  "ActionKeyword": "xf",
+  "Name": "XNoteFinder",
+  "Description": "XNote Finder",
+  "Author": "Bill Vander",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/3roman/Flow.Launcher.Plugin.Engineering",
+  "ExecuteFileName": "Flow.Launcher.Plugin.Engineering.XNoteFinder.dll",
+  "IcoPath": "app.png"
+}
