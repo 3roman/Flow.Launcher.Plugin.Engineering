@@ -13,10 +13,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
         {
             List<Result> results = new List<Result>();
 
-            if (0 == string.Compare("pt", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            if (0 == string.Compare("pt97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double p);
-                _ = double.TryParse(query.ThirdSearch, out double t);
+                _ = double.TryParse(query.FirstSearch, out double p);
+                _ = double.TryParse(query.SecondSearch, out double t);
 
                 results = new List<Result>
                 {
@@ -87,10 +87,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                     },
                 };
             }
-            else if (0 == string.Compare("px", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            else if (0 == string.Compare("px97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double p);
-                _ = double.TryParse(query.ThirdSearch, out double x);
+                _ = double.TryParse(query.FirstSearch, out double p);
+                _ = double.TryParse(query.SecondSearch, out double x);
 
                 results = new List<Result>
                 {
@@ -161,10 +161,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                     },
                 };
             }
-            else if (0 == string.Compare("tx", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            else if (0 == string.Compare("tx97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double t);
-                _ = double.TryParse(query.ThirdSearch, out double x);
+                _ = double.TryParse(query.FirstSearch, out double t);
+                _ = double.TryParse(query.SecondSearch, out double x);
 
                 results = new List<Result>
                 {
@@ -235,10 +235,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                     },
                 };
             }
-            else if (0 == string.Compare("ph", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            else if (0 == string.Compare("ph97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double p);
-                _ = double.TryParse(query.ThirdSearch, out double h);
+                _ = double.TryParse(query.FirstSearch, out double p);
+                _ = double.TryParse(query.SecondSearch, out double h);
 
                 results = new List<Result>
                 {
@@ -309,10 +309,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                     },
                 };
             }
-            else if (0 == string.Compare("ps", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            else if (0 == string.Compare("ps97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double p);
-                _ = double.TryParse(query.ThirdSearch, out double s);
+                _ = double.TryParse(query.FirstSearch, out double p);
+                _ = double.TryParse(query.SecondSearch, out double s);
 
                 results = new List<Result>
                 {
@@ -383,10 +383,10 @@ namespace Flow.Launcher.Plugin.Engineering.IAPWS_IF97
                     },
                 };
             }
-            else if (0 == string.Compare("hs", query.FirstSearch) && 3 == query.SearchTerms.Length)
+            else if (0 == string.Compare("hs97", query.ActionKeyword) && 2 == query.SearchTerms.Length)
             {
-                _ = double.TryParse(query.SecondSearch, out double h);
-                _ = double.TryParse(query.ThirdSearch, out double s);
+                _ = double.TryParse(query.FirstSearch, out double h);
+                _ = double.TryParse(query.SecondSearch, out double s);
 
                 results = new List<Result>
                 {

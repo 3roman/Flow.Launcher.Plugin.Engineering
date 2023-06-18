@@ -1,6 +1,6 @@
 {
   "ID": "EAD5EBC1C1A3471B97ECF66110D8C89C",
-  "ActionKeyword": "if97",
+  "ActionKeywords": ["pt97", "px97", "tx97", "ph97", "ps97", "hs97"],
   "Name": "SteamTable",
   "Description": "Lookup common properties of steam with SEUIF97 library",
   "Author": "Bill Vander",
